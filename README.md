@@ -1,4 +1,4 @@
-# brainfuck-interpreter
+# Brainfuck Python Interpreter
 A brainfuck interpreter written in Python
 
 ## Usage
