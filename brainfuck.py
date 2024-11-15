@@ -90,7 +90,6 @@ class Brainfuck:
                     self.add_to_output(
                         f"\033[0;31mError\033[0m: You closed a loop you never opened at  line {line_count}!\n"
                     )
-                    self.add_err_msg()
                     return False
             elif char == "\n":
                 line_count += 1
