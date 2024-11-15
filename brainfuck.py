@@ -96,7 +96,7 @@ class Brainfuck:
                 line_count += 1
 
             i += 1
-        return True
+        return False if self.bracket_stack else True
 
     def add_err_msg(self):
         messages = [
