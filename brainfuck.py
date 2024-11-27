@@ -105,8 +105,10 @@ class Brainfuck2Python:
                 elif char == "\n" or char == " ":
                     pass
                 else:
-                    # Error
-                    pass
+                    self.add_error(
+                        f"\033[0;31mError\033[0m: What the hell is a '{char}'?\n"
+                    )
+                    break
                 i += 1
 
         if self.errors:
@@ -146,7 +148,7 @@ class Brainfuck2Python:
                 line_count += 1
 
             i += 1
-        return False if self.bracket_stack else True
+        return not self.bracket_stack
 
     def add_error(self, new_error):
         self.errors += new_error + "\n"
@@ -245,7 +247,7 @@ class BrainfuckInterpreter:
                 line_count += 1
 
             i += 1
-        return False if self.bracket_stack else True
+        return not self.bracket_stack
 
     def add_err_msg(self):
         messages = [
