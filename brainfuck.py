@@ -252,7 +252,7 @@ class BrainfuckInterpreter:
             "Coding is hard, isn't it?",
             "A fine attempt… if you weren't trying to write code.",
             "That is a f*** up of not-insignicant proportions.",
-            "You're stupid of something?",
+            "You're stupid or something?",
             "I'm not angry. Just… disappointed.",
             "Coding isn't for everyone after all.",
             "I've seen bugs. But this… this is something else entirely.",
