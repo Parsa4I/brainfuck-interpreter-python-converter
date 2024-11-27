@@ -1,4 +1,5 @@
 # Brainfuck Python Interpreter and Converter
+Interpret and run BrainFuck codes or convert them to Python code.
 
 ## Usage
 
