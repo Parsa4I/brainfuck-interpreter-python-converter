@@ -1,16 +1,23 @@
-# Brainfuck Python Interpreter
-A brainfuck interpreter written in Python
+# Brainfuck Python Interpreter and Converter
 
 ## Usage
-- Run through terminal:
-```
-python brainfuck.py <path_to_bf_file>
-```
-- Use in another python script:
-```python
-from brainfuck import Brainfuck
 
-bf = Brainfuck("a string containing your program")
-output = bf.evaluate()
-print(output)
+- Run through terminal:
+
+```shell
+python brainfuck.py compile|run <input_file> -o <output_file>
+```
+
+- Use in python:
+
+```python
+from brainfuck import Brainfuck2Python, BrainfuckInterpreter
+
+# compile
+bf = Brainfuck2Python("a string containing your program")
+output = bf.compile()
+
+# interpret
+bf = BrainfuckInterpreter("a string containing your program")
+output = bf.run()
 ```
