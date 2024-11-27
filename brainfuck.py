@@ -148,21 +148,6 @@ class Brainfuck2Python:
             i += 1
         return False if self.bracket_stack else True
 
-    def add_err_msg(self):
-        messages = [
-            "Coding is hard, isn't it?",
-            "A fine attempt… if you weren't trying to write code.",
-            "That is a f*** up of not-insignicant proportions.",
-            "You're stupid of something?",
-            "I'm not angry. Just… disappointed.",
-            "Coding isn't for everyone after all.",
-            "I've seen bugs. But this… this is something else entirely.",
-            "Guess you're just having a bad day.",
-        ]
-
-        msg_index = random.randint(0, len(messages) - 1)
-        self.code += messages[msg_index] + "\n"
-
     def add_error(self, new_error):
         self.errors += new_error + "\n"
 
